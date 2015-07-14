@@ -1,0 +1,42 @@
+{
+  "/home/adalberto/proyectos/GrupoTara/GetFromServers/src": {
+    "location": "/home/adalberto/proyectos/GrupoTara/GetFromServers/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/adalberto/proyectos/GrupoTara/GetFromServers/src\u0027. Skipped."
+  },
+  "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar",
+    "status": "RESOLVED"
+  },
+  "/home/adalberto/proyectos/GrupoTara/libs/xercesImpl.jar": {
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/xercesImpl.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027/home/adalberto/proyectos/GrupoTara/libs/xercesImpl.jar\u0027. Neither fingerprint \u00276483e33907f349492c7eee09b0a6fa15d0f40712\u0027 nor symbolic name \u0027xercesImpl\u0027 are known."
+  },
+  "/home/adalberto/Downloads/JAVA/httpcomponents-client-4.4/lib/httpclient-4.4.jar": {
+    "coordinate": "org.apache.httpcomponents:org.apache.httpcomponents.httpclient:zip:call:4.0.0",
+    "location": "/home/adalberto/Downloads/JAVA/httpcomponents-client-4.4/lib/httpclient-4.4.jar",
+    "status": "RESOLVED"
+  },
+  "/home/adalberto/Downloads/JAVA/httpcomponents-client-4.4/lib/httpcore-4.4.jar": {
+    "coordinate": "org.apache.httpcomponents:org.apache.httpcomponents.httpcore:zip:call:4.0.0",
+    "location": "/home/adalberto/Downloads/JAVA/httpcomponents-client-4.4/lib/httpcore-4.4.jar",
+    "status": "RESOLVED"
+  },
+  "/home/adalberto/Downloads/JAVA/jsoup-1.8.1.jar": {
+    "coordinate": "org.jsoup:org.jsoup:zip:call:1.0.0",
+    "location": "/home/adalberto/Downloads/JAVA/jsoup-1.8.1.jar",
+    "status": "RESOLVED"
+  },
+  "/home/adalberto/proyectos/GrupoTara/libs/jsch-0.1.52.jar": {
+    "coordinate": "com.jcraft.jsch:com.jcraft.jsch:zip:call:0.0.0",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/jsch-0.1.52.jar",
+    "status": "RESOLVED"
+  },
+  "/home/adalberto/proyectos/GrupoTara/libs/jt400android.jar": {
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/jt400android.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027/home/adalberto/proyectos/GrupoTara/libs/jt400android.jar\u0027. Neither fingerprint \u0027e4a0deebd7bb32af0c1c78516876cafef3d2464c\u0027 nor symbolic name \u0027jt400android\u0027 are known."
+  }
+}

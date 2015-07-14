@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package vista;
+
+/**
+ * @author adalberto
+ *
+ */
+public class TestConnection {
+
+	/**
+	 * 
+	 */
+	public TestConnection() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,46 @@
+/**
+ * 
+ */
+package vista;
+
+/**
+ * @author adalberto
+ *
+ */
+public class TestConnection {
+	static Properties props;
+	/**
+	 * 
+	 */
+	public TestConnection() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		 
+		try {
+		 
+		 props = new Properties();
+		 props.load(new FileInputStream("properties/mydb2.properties"));
+		 
+		 String DRIVER = "com.ibm.as400.access.AS400JDBCDriver"; 
+		 String URL = "jdbc:as400://" + props.getProperty("local_system").trim() + ";naming=system;errors=full";
+		 Connection conn = null;
+		 
+		 //Connect to iSeries 
+		 Class.forName(DRIVER); 
+		 conn = DriverManager.getConnection(URL, props.getProperty("userId").trim(), props.getProperty("password").trim()); 
+		 
+		 conn.close();
+		 
+		}
+		catch (Exception e) {
+		 System.out.println(e);
+		}
+	}
+
+}

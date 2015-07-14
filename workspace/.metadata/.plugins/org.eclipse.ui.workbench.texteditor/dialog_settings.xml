@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="329" key="DIALOG_WIDTH"/>
+		<item value="12" key="DIALOG_Y_ORIGIN"/>
+		<item value="584" key="DIALOG_HEIGHT"/>
+		<item value="65" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="str" key="selection"/>
+		<list key="findhistory">
+			<item value="str"/>
+			<item value="bis"/>
+			<item value="SFTPWORKINGDIR"/>
+			<item value="equalsIgnoreCase(&quot;SSH&quot;)"/>
+			<item value="SSH"/>
+			<item value="{"/>
+			<item value="["/>
+			<item value="formato"/>
+		</list>
+		<list key="replacehistory">
+			<item value="diaSemana"/>
+			<item value="diaSemanaActualEsperar"/>
+			<item value="mes"/>
+			<item value="mesActualEsperar"/>
+			<item value="dia"/>
+			<item value="DAY"/>
+			<item value="diaActualEsperar"/>
+			<item value="HOUR"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="359" key="DIALOG_Y_ORIGIN"/>
+		<item value="356" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

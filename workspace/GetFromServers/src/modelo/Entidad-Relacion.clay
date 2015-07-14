@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clay-model clay-version="2.0.1">
+<database-model author="" begin-script="" end-script="" id="421ed4:14b65aea935:-8000" name="Entidad-Relacion" sql-dialect-id="jp.azzurri.clay.dialect.MySQL_5_0_Dialect" version="1.0">
+<schema-list>
+<schema id="421ed4:14b65aea935:-7ffd" name="get_from_servers">
+<table-list>
+<table id="421ed4:14b65aea935:-7fff" name="hilos">
+<column-list>
+<column auto-increment="false" column-size="5" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7ffa" mandatory="true" name="id_hilo">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="100" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7ff9" mandatory="true" name="nombre">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="0" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7c95" mandatory="true" name="auto_reproducir">
+<data-type name="BOOLEAN" selected-variant-pattern="BOOLEAN"/>
+</column>
+</column-list>
+<primary-key id="421ed4:14b65aea935:-7ffe" name="PK_HILOS">
+<primary-key-column name="id_hilo"/>
+</primary-key>
+</table>
+<table id="421ed4:14b65aea935:-7ff7" name="servidores">
+<column-list>
+<column auto-increment="false" column-size="5" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7ff3" mandatory="true" name="id_servidor">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="100" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7ff2" mandatory="true" name="nombre">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="0" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7ff1" mandatory="false" name="puerto">
+<data-type name="INTEGER" selected-variant-pattern="INTEGER"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7ff0" mandatory="false" name="protocolo">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="100" decimal-digits="0" default-value="" id="80cf2a:14c65578522:-7fb5" mandatory="false" name="usuario">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="100" decimal-digits="0" default-value="" id="80cf2a:14c65578522:-7fb6" mandatory="false" name="clave">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="0" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7f37" mandatory="false" name="orden">
+<data-type name="INTEGER" selected-variant-pattern="INTEGER"/>
+</column>
+</column-list>
+<primary-key id="421ed4:14b65aea935:-7ff6" name="PK_SERVIDORES">
+<primary-key-column name="id_servidor"/>
+</primary-key>
+</table>
+<table id="421ed4:14b65aea935:-7fe9" name="archivos_buscar">
+<column-list>
+<column auto-increment="false" column-size="5" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7fe2" mandatory="true" name="id_archivo">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="100" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7fe5" mandatory="true" name="nombre_original">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="100" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7fe4" mandatory="true" name="ruta_original">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="100" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7fe3" mandatory="false" name="nombre_final">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="100" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7f20" mandatory="false" name="ruta_final">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="5" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7fbc" mandatory="true" name="id_servidor_original">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="5" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7d71" mandatory="true" name="id_servidor_final">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+</column-list>
+<primary-key id="421ed4:14b65aea935:-7fe8" name="PK_ARCHIVOS_BUSCAR">
+<primary-key-column name="id_archivo"/>
+</primary-key>
+<foreign-key-list>
+<foreign-key id="421ed4:14b65aea935:-7fbe" name="FK_archivos_buscar_1" on-delete="UNSPECIFIED" on-update="UNSPECIFIED" referenced-key="PK_SERVIDORES" referenced-table="servidores" referenced-table-schema="get_from_servers" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-column column-name="id_servidor_original" referenced-key-column-name="id_servidor"/>
+</foreign-key>
+<foreign-key id="421ed4:14b65aea935:-7d73" name="FK_archivos_buscar_2" on-delete="UNSPECIFIED" on-update="UNSPECIFIED" referenced-key="PK_SERVIDORES" referenced-table="servidores" referenced-table-schema="get_from_servers" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-column column-name="id_servidor_final" referenced-key-column-name="id_servidor"/>
+</foreign-key>
+</foreign-key-list>
+</table>
+<table id="421ed4:14b65aea935:-7fdf" name="agendas">
+<column-list>
+<column auto-increment="false" column-size="5" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7fa4" mandatory="true" name="id_agenda">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="100" decimal-digits="0" default-value="" id="4eb4a0:14c02623be1:-7fd4" mandatory="true" name="nombre">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="0" decimal-digits="0" default-value="" id="4eb4a0:14c02623be1:-7fdf" mandatory="true" name="fecha_hora_inicial">
+<data-type name="DATETIME" selected-variant-pattern="DATETIME"/>
+</column>
+<column auto-increment="false" column-size="0" decimal-digits="0" default-value="" id="4eb4a0:14c02623be1:-7fe0" mandatory="true" name="solo_una_vez">
+<data-type name="BOOLEAN" selected-variant-pattern="BOOLEAN"/>
+</column>
+<column auto-increment="false" column-size="0" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7fa3" mandatory="false" name="minuto">
+<data-type name="INTEGER" selected-variant-pattern="INTEGER"/>
+</column>
+<column auto-increment="false" column-size="0" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7fa2" mandatory="false" name="hora">
+<data-type name="INTEGER" selected-variant-pattern="INTEGER"/>
+</column>
+<column auto-increment="false" column-size="0" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7fa1" mandatory="false" name="dia">
+<data-type name="INTEGER" selected-variant-pattern="INTEGER"/>
+</column>
+<column auto-increment="false" column-size="0" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7fa0" mandatory="false" name="mes">
+<data-type name="INTEGER" selected-variant-pattern="INTEGER"/>
+</column>
+<column auto-increment="false" column-size="0" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7f9f" mandatory="false" name="dia_semana">
+<data-type name="INTEGER" selected-variant-pattern="INTEGER"/>
+</column>
+</column-list>
+<primary-key id="421ed4:14b65aea935:-7fde" name="PK_AGENDAS">
+<primary-key-column name="id_agenda"/>
+</primary-key>
+</table>
+<table id="421ed4:14b65aea935:-7f8a" name="hilos_x_agendas">
+<column-list>
+<column auto-increment="false" column-size="5" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7f86" mandatory="true" name="id_hilo_x_agenda">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="5" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7f6e" mandatory="true" name="id_hilo">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="5" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7f4e" mandatory="true" name="id_agenda">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="0" decimal-digits="0" default-value="" id="4eb4a0:14c02623be1:-7fa3" mandatory="true" name="orden">
+<data-type name="INTEGER" selected-variant-pattern="INTEGER"/>
+</column>
+</column-list>
+<primary-key id="421ed4:14b65aea935:-7f89" name="PK_HILOS_X_AGENDAS">
+<primary-key-column name="id_hilo_x_agenda"/>
+</primary-key>
+<foreign-key-list>
+<foreign-key id="421ed4:14b65aea935:-7f70" name="FK_hilos_x_agendas_1" on-delete="UNSPECIFIED" on-update="UNSPECIFIED" referenced-key="PK_HILOS" referenced-table="hilos" referenced-table-schema="get_from_servers" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-column column-name="id_hilo" referenced-key-column-name="id_hilo"/>
+</foreign-key>
+<foreign-key id="421ed4:14b65aea935:-7f50" name="FK_hilos_x_agendas_2" on-delete="UNSPECIFIED" on-update="UNSPECIFIED" referenced-key="PK_AGENDAS" referenced-table="agendas" referenced-table-schema="get_from_servers" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-column column-name="id_agenda" referenced-key-column-name="id_agenda"/>
+</foreign-key>
+</foreign-key-list>
+</table>
+<table id="421ed4:14b65aea935:-7f1f" name="logs">
+<column-list>
+<column auto-increment="false" column-size="0" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7f1b" mandatory="true" name="fecha_hora">
+<data-type name="DATETIME" selected-variant-pattern="DATETIME"/>
+</column>
+<column auto-increment="false" column-size="100" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7c7c" mandatory="true" name="evento">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="100" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7c90" mandatory="false" name="status">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="0" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7f1a" mandatory="false" name="descripcion">
+<data-type name="TEXT" selected-variant-pattern="TEXT"/>
+</column>
+<column auto-increment="false" column-size="5" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7ee7" mandatory="false" name="id_hilo">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="5" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7eab" mandatory="false" name="id_archivo">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="5" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7e5f" mandatory="false" name="id_servidor">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="5" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7e15" mandatory="false" name="id_agenda">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+</column-list>
+<primary-key id="421ed4:14b65aea935:-7f1e" name="PK_LOGS">
+<primary-key-column name="fecha_hora"/>
+</primary-key>
+<foreign-key-list>
+<foreign-key id="421ed4:14b65aea935:-7ee9" name="FK_logs_1" on-delete="UNSPECIFIED" on-update="UNSPECIFIED" referenced-key="PK_HILOS" referenced-table="hilos" referenced-table-schema="get_from_servers" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-column column-name="id_hilo" referenced-key-column-name="id_hilo"/>
+</foreign-key>
+<foreign-key id="421ed4:14b65aea935:-7ead" name="FK_logs_2" on-delete="UNSPECIFIED" on-update="UNSPECIFIED" referenced-key="PK_ARCHIVOS_BUSCAR" referenced-table="archivos_buscar" referenced-table-schema="get_from_servers" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-column column-name="id_archivo" referenced-key-column-name="id_archivo"/>
+</foreign-key>
+<foreign-key id="421ed4:14b65aea935:-7e61" name="FK_logs_3" on-delete="UNSPECIFIED" on-update="UNSPECIFIED" referenced-key="PK_SERVIDORES" referenced-table="servidores" referenced-table-schema="get_from_servers" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-column column-name="id_servidor" referenced-key-column-name="id_servidor"/>
+</foreign-key>
+<foreign-key id="421ed4:14b65aea935:-7e17" name="FK_logs_4" on-delete="UNSPECIFIED" on-update="UNSPECIFIED" referenced-key="PK_AGENDAS" referenced-table="agendas" referenced-table-schema="get_from_servers" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-column column-name="id_agenda" referenced-key-column-name="id_agenda"/>
+</foreign-key>
+</foreign-key-list>
+</table>
+<table id="421ed4:14b65aea935:-7e05" name="archivos_x_hilos">
+<column-list>
+<column auto-increment="false" column-size="5" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7e01" mandatory="true" name="id_archivo_x_hilo">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="5" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7de1" mandatory="true" name="id_hilo">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="5" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7db0" mandatory="true" name="id_archivo">
+<data-type name="VARCHAR" selected-variant-pattern="VARCHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="0" decimal-digits="0" default-value="" id="421ed4:14b65aea935:-7ca1" mandatory="true" name="orden">
+<data-type name="INTEGER" selected-variant-pattern="INTEGER"/>
+</column>
+</column-list>
+<primary-key id="421ed4:14b65aea935:-7e04" name="PK_ARCHIVOS_X_HILOS">
+<primary-key-column name="id_archivo_x_hilo"/>
+</primary-key>
+<foreign-key-list>
+<foreign-key id="421ed4:14b65aea935:-7de3" name="FK_archivos_x_hilos_1" on-delete="UNSPECIFIED" on-update="UNSPECIFIED" referenced-key="PK_HILOS" referenced-table="hilos" referenced-table-schema="get_from_servers" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-column column-name="id_hilo" referenced-key-column-name="id_hilo"/>
+</foreign-key>
+<foreign-key id="421ed4:14b65aea935:-7db2" name="FK_archivos_x_hilos_2" on-delete="UNSPECIFIED" on-update="UNSPECIFIED" referenced-key="PK_ARCHIVOS_BUSCAR" referenced-table="archivos_buscar" referenced-table-schema="get_from_servers" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-column column-name="id_archivo" referenced-key-column-name="id_archivo"/>
+</foreign-key>
+</foreign-key-list>
+</table>
+</table-list>
+</schema>
+</schema-list>
+</database-model>
+<diagram>
+<table-figure refid="421ed4:14b65aea935:-7fff" x="77" y="73"/>
+<table-figure refid="421ed4:14b65aea935:-7ff7" x="373" y="40"/>
+<table-figure refid="421ed4:14b65aea935:-7fe9" x="824" y="64"/>
+<table-figure refid="421ed4:14b65aea935:-7fdf" x="47" y="623"/>
+<table-figure refid="421ed4:14b65aea935:-7f8a" x="11" y="284"/>
+<table-figure refid="421ed4:14b65aea935:-7f1f" x="893" y="549"/>
+<table-figure refid="421ed4:14b65aea935:-7e05" x="323" y="362"/>
+</diagram>
+</clay-model>

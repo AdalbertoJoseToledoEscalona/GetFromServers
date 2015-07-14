@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=GetFromServers/\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.lang(Boolean.class[Boolean" modifiers="49" timestamp="1422319965000"/>
+<typeInfo handle="=GetFromServers/\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.lang(Integer.class[Integer" modifiers="49" timestamp="1422319965000"/>
+<typeInfo handle="=GetFromServers/\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.io(File.class[File" modifiers="33" timestamp="1422319965000"/>
+<typeInfo handle="=GetFromServers/\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.util(Date.class[Date" modifiers="33" timestamp="1422319965000"/>
+<typeInfo handle="=GetFromServers/\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.lang(String.class[String" modifiers="49" timestamp="1422319965000"/>
+<typeInfo handle="=GetFromServers/\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;javax.swing(Action.class[Action" modifiers="1537" timestamp="1422319965000"/>
+<typeInfo handle="=GetFromServers/\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.awt.event(MouseAdapter.class[MouseAdapter" modifiers="1057" timestamp="1422319965000"/>
+<typeInfo handle="=GetFromServers/\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.awt.event(ActionListener.class[ActionListener" modifiers="1537" timestamp="1422319965000"/>
+<typeInfo handle="=GetFromServers/\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.lang(Thread.class[Thread" modifiers="33" timestamp="1422319965000"/>
+<typeInfo handle="=GetFromServers/\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.lang(Runnable.class[Runnable" modifiers="1537" timestamp="1422319965000"/>
+</typeInfoHistroy>

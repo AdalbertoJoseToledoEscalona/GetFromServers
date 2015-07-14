@@ -1,0 +1,730 @@
+[
+  {
+    "symbolicName": "org.quartz-scheduler.quartz",
+    "version": {
+      "major": 2,
+      "minor": 2,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b28440d9a2e151d8532495711afeaf88f92b56c7",
+    "jarFileModificationDate": "2013-09-23T13:48:06-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/quartz-2.2.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.jsoup",
+    "version": {
+      "major": 1,
+      "minor": 8,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3d57e95c0f150b885ccdbda7a12bef353fd31d02",
+    "jarFileModificationDate": "2015-03-15T21:17:14-04:30",
+    "location": "/home/adalberto/Downloads/JAVA/jsoup-1.8.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "fcb3998128a3e1f830c0210936056ec7aed9d67c",
+    "jarFileModificationDate": "2015-01-26T20:22:45-04:30",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a08ea293201b55c748f328ffc756a7b903da3419",
+    "jarFileModificationDate": "2015-01-26T20:16:21-04:30",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "13f1b361090b36111f733d2d2f6ab6db2c9958ca",
+    "jarFileModificationDate": "2013-12-09T07:20:36-04:30",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/java-atk-wrapper.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "com.jcraft.jsch",
+    "version": {
+      "major": 0,
+      "minor": 1,
+      "micro": 52,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b2c608943b8b46078144d261fa4ff7d9e77c2eae",
+    "jarFileModificationDate": "2015-03-29T15:07:53-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/jsch-0.1.52.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e6228038dc6e4b8c310ae4afa6b240e6d6ca410d",
+    "jarFileModificationDate": "2015-01-26T20:16:10-04:30",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpmime",
+    "version": {
+      "major": 4,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "54646f004d5b4c37a5a75b1d416c59a3075204e2",
+    "jarFileModificationDate": "2015-01-27T16:27:53-04:30",
+    "location": "/home/adalberto/Downloads/JAVA/httpcomponents-client-4.4/lib/httpmime-4.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jt400Servlet",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0a708c2f5a74995aef58c3989766a34346ea08eb",
+    "jarFileModificationDate": "2014-11-25T21:21:41-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/jt400Servlet.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jui400",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "602de53af67d3c3a48f14ac174d588cbdb2db2ae",
+    "jarFileModificationDate": "2014-11-25T21:21:43-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/jui400.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "slf4j.api",
+    "version": {
+      "major": 1,
+      "minor": 6,
+      "micro": 6,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ce53b0a0e2cfbb27e8a59d38f79a18a5c6a8d2b0",
+    "jarFileModificationDate": "2012-10-19T01:22:43-04:30",
+    "location": "/home/adalberto/Downloads/java scheduler/quartz-2.2.1/lib/slf4j-api-1.6.6.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "util400",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1ceae404bb17cb84217090279be594f9b93dfd11",
+    "jarFileModificationDate": "2014-11-25T21:21:43-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/util400.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "slf4j.api",
+    "version": {
+      "major": 1,
+      "minor": 6,
+      "micro": 6,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ce53b0a0e2cfbb27e8a59d38f79a18a5c6a8d2b0",
+    "jarFileModificationDate": "2012-10-19T01:22:43-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/slf4j-api-1.6.6.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2c133f51588afbbb3a6609f9f0608bf2ff6279ba",
+    "jarFileModificationDate": "2015-01-26T20:18:33-04:30",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "com.sun.jna.platform",
+    "version": {
+      "major": 4,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "23457ad1cf75c2c16763330de5565a0e67b4bc0a",
+    "jarFileModificationDate": "2014-06-13T07:28:40-04:30",
+    "location": "/home/adalberto/Downloads/JAVA/httpcomponents-client-4.4/lib/jna-platform-4.1.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "log4j",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "micro": 16,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7999a63bfccbc7c247a9aea10d83d4272bd492c6",
+    "jarFileModificationDate": "2011-05-19T14:35:49-04:30",
+    "location": "/home/adalberto/Downloads/java scheduler/quartz-2.2.1/lib/log4j-1.2.16.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.httpclient",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "962616364835eaa661b7b5eaa0c5ead586d2c4fa",
+    "jarFileModificationDate": "2013-03-24T20:17:24-04:30",
+    "location": "/home/adalberto/Downloads/JAVA/org.apache.commons.httpclient.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "c3p0-0.9.1.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "302704f30c6e7abb7a0457f7771739e03c973e80",
+    "jarFileModificationDate": "2011-05-20T06:42:44-04:30",
+    "location": "/home/adalberto/Downloads/java scheduler/quartz-2.2.1/lib/c3p0-0.9.1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpcore",
+    "version": {
+      "major": 4,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e9b3863fd9c8a273ceed4a7fae10f40bb10a2328",
+    "jarFileModificationDate": "2014-12-14T08:00:34-04:30",
+    "location": "/home/adalberto/Downloads/JAVA/httpcomponents-client-4.4/lib/httpcore-4.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "composer",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "fddcd2f0875e6c71765d134e57eaa628585ec848",
+    "jarFileModificationDate": "2014-11-25T21:21:43-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/composer.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "log4j",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "micro": 16,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7999a63bfccbc7c247a9aea10d83d4272bd492c6",
+    "jarFileModificationDate": "2011-05-19T14:35:49-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/log4j-1.2.16.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "slf4j.log4j12",
+    "version": {
+      "major": 1,
+      "minor": 6,
+      "micro": 6,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5cd9b4fbc3ff6a97beaade3206137d76f65df805",
+    "jarFileModificationDate": "2012-10-18T19:39:00-04:30",
+    "location": "/home/adalberto/Downloads/java scheduler/quartz-2.2.1/lib/slf4j-log4j12-1.6.6.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpclient-win",
+    "version": {
+      "major": 4,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d15bf939c81d6f8f730fc6baf15838e205482c94",
+    "jarFileModificationDate": "2015-01-27T16:29:27-04:30",
+    "location": "/home/adalberto/Downloads/JAVA/httpcomponents-client-4.4/lib/httpclient-win-4.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jt400Proxy",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f26f2739358dd38af926c85ba3e2a5fb2e48709b",
+    "jarFileModificationDate": "2014-11-25T21:21:41-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/jt400Proxy.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6ac9f7772eb39391e8a37860ec810af9985d8ff4",
+    "jarFileModificationDate": "2015-01-26T20:16:38-04:30",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "xercesImpl",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6483e33907f349492c7eee09b0a6fa15d0f40712",
+    "jarFileModificationDate": "2006-11-22T19:36:30-04:00",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/xercesImpl.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "forms-1.3.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "16a13056429fe1549076d25c7e5359b3f99b805f",
+    "jarFileModificationDate": "2015-03-10T02:37:14-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/GetFromServers/forms-1.3.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "serializer",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c8e1f1e7bf871280375b392776340e5822126e6a",
+    "jarFileModificationDate": "2006-11-22T19:36:30-04:00",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/serializer.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b3b3559517340eb2cd9e232cf85dd64fa001784d",
+    "jarFileModificationDate": "2015-01-26T20:16:28-04:30",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.fluent-hc",
+    "version": {
+      "major": 4,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "965f740251d2ce4efaf34b9ac174b1e6dd3c7c3e",
+    "jarFileModificationDate": "2015-01-27T16:28:18-04:30",
+    "location": "/home/adalberto/Downloads/JAVA/httpcomponents-client-4.4/lib/fluent-hc-4.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "tes",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b5bae0ccaf9844456adbd377da76cc4faffedbf9",
+    "jarFileModificationDate": "2014-11-25T21:21:42-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/tes.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1e5d73a5b163cd9fffa8b1493ae413426e0fc005",
+    "jarFileModificationDate": "2015-01-26T20:22:45-04:30",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rhino.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpclient-cache",
+    "version": {
+      "major": 4,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d9e249ad4b19cb8ef7d45e8fe6dda49cdd4aa123",
+    "jarFileModificationDate": "2015-01-27T16:28:52-04:30",
+    "location": "/home/adalberto/Downloads/JAVA/httpcomponents-client-4.4/lib/httpclient-cache-4.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jtopenlite",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "decd4edc5b7fd85332048d37529e4d24437b2e93",
+    "jarFileModificationDate": "2014-11-25T21:21:41-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/jtopenlite.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.quartz-scheduler.quartz-jobs",
+    "version": {
+      "major": 2,
+      "minor": 2,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d849d71d5b40ddf32fce17a0a47fcda72e6fd0eb",
+    "jarFileModificationDate": "2013-09-23T13:48:16-04:30",
+    "location": "/home/adalberto/Downloads/java scheduler/quartz-2.2.1/lib/quartz-jobs-2.2.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "49ad952236f39fc8dc0957396f03c67c5343be7e",
+    "jarFileModificationDate": "2015-01-26T20:22:45-04:30",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.quartz-scheduler.quartz-jobs",
+    "version": {
+      "major": 2,
+      "minor": 2,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d849d71d5b40ddf32fce17a0a47fcda72e6fd0eb",
+    "jarFileModificationDate": "2013-09-23T13:48:16-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/quartz-jobs-2.2.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.codec",
+    "version": {
+      "major": 1,
+      "minor": 9,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9ce04e34240f674bc72680f8b843b1457383161a",
+    "jarFileModificationDate": "2014-10-19T14:54:34-04:30",
+    "location": "/home/adalberto/Downloads/JAVA/httpcomponents-client-4.4/lib/commons-codec-1.9.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.sun.jna",
+    "version": {
+      "major": 4,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1c12d070e602efd8021891cdd7fd18bc129372d4",
+    "jarFileModificationDate": "2014-06-13T07:28:40-04:30",
+    "location": "/home/adalberto/Downloads/JAVA/httpcomponents-client-4.4/lib/jna-4.1.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.logging",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4bfc12adfe4842bf07b657f0369c4cb522955686",
+    "jarFileModificationDate": "2014-10-15T07:38:47-04:30",
+    "location": "/home/adalberto/Downloads/JAVA/httpcomponents-client-4.4/lib/commons-logging-1.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "uitools",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "695a0964452f58df2b49ecbc8b83b7a663585c03",
+    "jarFileModificationDate": "2014-11-25T21:21:43-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/uitools.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "66ab72596f1d79e62005befd8618f5d2cdfa72ff",
+    "jarFileModificationDate": "2015-01-26T20:18:02-04:30",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.quartz-scheduler.quartz",
+    "version": {
+      "major": 2,
+      "minor": 2,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b28440d9a2e151d8532495711afeaf88f92b56c7",
+    "jarFileModificationDate": "2013-09-23T13:48:06-04:30",
+    "location": "/home/adalberto/Downloads/java scheduler/quartz-2.2.1/lib/quartz-2.2.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "slf4j.log4j12",
+    "version": {
+      "major": 1,
+      "minor": 6,
+      "micro": 6,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5cd9b4fbc3ff6a97beaade3206137d76f65df805",
+    "jarFileModificationDate": "2012-10-18T19:39:00-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/slf4j-log4j12-1.6.6.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpclient",
+    "version": {
+      "major": 4,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6d220441ca681dddc55a189eae81a437309128b8",
+    "jarFileModificationDate": "2015-01-27T16:27:03-04:30",
+    "location": "/home/adalberto/Downloads/JAVA/httpcomponents-client-4.4/lib/httpclient-4.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "xercesSamples",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3909af29aeb1f81cd282049fcfdb7a22d917afb0",
+    "jarFileModificationDate": "2006-11-22T19:36:25-04:00",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/xercesSamples.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jt400",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9405a72dec8f97695e4c0f53f0806d4a6cd6a310",
+    "jarFileModificationDate": "2014-11-25T21:21:40-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/jt400.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "c3p0-0.9.1.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "302704f30c6e7abb7a0457f7771739e03c973e80",
+    "jarFileModificationDate": "2011-05-20T06:42:44-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/c3p0-0.9.1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7c507c195227b25e6fddde113dd1a5b632a281aa",
+    "jarFileModificationDate": "2015-01-26T20:16:36-04:30",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0850833552a66045b1f370984275fb8e6b12358f",
+    "jarFileModificationDate": "2015-01-27T02:24:48-04:30",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/icedtea-sound.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "xml-apis",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "90b215f48fe42776c8c7f6e3509ec54e84fd65ef",
+    "jarFileModificationDate": "2006-11-22T19:36:30-04:00",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/xml-apis.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "484d6a4175a2a1d8195f6f553d5dcfed1a4e302d",
+    "jarFileModificationDate": "2015-01-26T20:22:45-04:30",
+    "location": "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "reportwriter",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "074e8c799c4b9acf8fea83a071b31af066b96831",
+    "jarFileModificationDate": "2014-11-25T21:21:43-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/reportwriter.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "outputwriters",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "da9d70288f64f0673448432937a739863e13027d",
+    "jarFileModificationDate": "2014-11-25T21:21:43-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/outputwriters.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "resolver",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3d0f97750b3a03e0971831566067754ba4bfd68c",
+    "jarFileModificationDate": "2006-11-22T19:36:30-04:00",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/resolver.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jt400android",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e4a0deebd7bb32af0c1c78516876cafef3d2464c",
+    "jarFileModificationDate": "2014-11-25T21:21:42-04:30",
+    "location": "/home/adalberto/proyectos/GrupoTara/libs/jt400android.jar",
+    "javaRuntime": false
+  }
+]

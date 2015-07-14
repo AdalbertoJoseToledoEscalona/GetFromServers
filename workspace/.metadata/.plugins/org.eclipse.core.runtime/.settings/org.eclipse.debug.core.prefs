@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="archivo.getNombreOriginal()"/>\n<expression enabled\="true" text\="nombreArchivoOriginal"/>\n<expression enabled\="true" text\="nombreArchivoFinal"/>\n<expression enabled\="true" text\="campo"/>\n<expression enabled\="true" text\="formato"/>\n<expression enabled\="true" text\="fecha"/>\n</watchExpressions>\n

@@ -1,0 +1,328 @@
+package vista;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.awt.Toolkit;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+import javax.swing.JTabbedPane;
+import javax.swing.border.EmptyBorder;
+
+import controlador.ControladorPrincipal;
+import javax.swing.JLabel;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.JScrollPane;
+import javax.swing.JButton;
+import java.awt.GridLayout;
+import java.awt.FlowLayout;
+
+public class Principal extends JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+	private JTabbedPane tabbedPane;
+	private JPanel panelAgregarServidor;
+	private JPanel panelListaServidores;
+	private JMenuItem mntmAgregarServidor;
+	private JMenuItem mntmListarServidores;
+	private JMenuItem mntmAgregarArchivo;
+	private JMenuItem mntmListarArchivos;
+	private JMenuItem mntmAgregarHilo;
+	private JMenuItem mntmListarHilos;
+	private JMenuItem mntmAgregarAgenda;
+	private JMenuItem mntmListarAgendas;
+	private JPanel panelAgregarArchivo;
+	private JPanel panelListaArchivos;
+	private JPanel panelAgregarHilo;
+	private JPanel panelListaHilos;
+	private JPanel panelAgregarAgenda;
+	private JPanel panelListaAgendas;
+	private JPanel panelSuperior;
+	private JPanel panelCentral;
+	private JPanel panelInferior;
+	private JLabel lblMensaje;
+	private JPanel panelLblIdArchivo;
+	private JLabel lblIdArchivo;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Principal frame = new Principal();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Principal() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Principal.class.getResource("/vista/img/icon/ftp-px.png")));
+		setTitle("Grupo Tara");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 585, 319);
+		
+		JMenuBar menuBar = new JMenuBar();
+		menuBar.setToolTipText("Barra de Menús");
+		setJMenuBar(menuBar);
+		
+		JMenu mnServidores = new JMenu("Servidores");
+		mnServidores.setIcon(new ImageIcon(Principal.class.getResource("/vista/img/icon/server.png")));
+		menuBar.add(mnServidores);
+		
+		mntmAgregarServidor = new JMenuItem("Agregar");
+		mntmAgregarServidor.setIcon(new ImageIcon(Principal.class.getResource("/vista/img/icon/agregar.gif")));
+		mnServidores.add(mntmAgregarServidor);
+		
+		mntmListarServidores = new JMenuItem("Listar");
+		mntmListarServidores.setIcon(new ImageIcon(Principal.class.getResource("/vista/img/icon/listar.jpg")));
+		mnServidores.add(mntmListarServidores);
+		
+		JMenu mnArchivos = new JMenu("Archivos");
+		mnArchivos.setIcon(new ImageIcon(Principal.class.getResource("/vista/img/icon/afile.png")));
+		menuBar.add(mnArchivos);
+		
+		mntmAgregarArchivo = new JMenuItem("Agregar");
+		mntmAgregarArchivo.setIcon(new ImageIcon(Principal.class.getResource("/vista/img/icon/agregar.gif")));
+		mnArchivos.add(mntmAgregarArchivo);
+		
+		mntmListarArchivos = new JMenuItem("Listar");
+		mntmListarArchivos.setIcon(new ImageIcon(Principal.class.getResource("/vista/img/icon/listar.jpg")));
+		mnArchivos.add(mntmListarArchivos);
+		
+		JMenu mnHilos = new JMenu("Hilos");
+		mnHilos.setIcon(new ImageIcon(Principal.class.getResource("/vista/img/icon/process.gif")));
+		menuBar.add(mnHilos);
+		
+		mntmAgregarHilo = new JMenuItem("Agregar");
+		mntmAgregarHilo.setIcon(new ImageIcon(Principal.class.getResource("/vista/img/icon/agregar.gif")));
+		mnHilos.add(mntmAgregarHilo);
+		
+		mntmListarHilos = new JMenuItem("Listar");
+		mntmListarHilos.setIcon(new ImageIcon(Principal.class.getResource("/vista/img/icon/listar.jpg")));
+		mnHilos.add(mntmListarHilos);
+		
+		JMenu mnAgendas = new JMenu("Agendas");
+		mnAgendas.setIcon(new ImageIcon(Principal.class.getResource("/vista/img/icon/schedule.png")));
+		menuBar.add(mnAgendas);
+		
+		mntmAgregarAgenda = new JMenuItem("Agregar");
+		mntmAgregarAgenda.setIcon(new ImageIcon(Principal.class.getResource("/vista/img/icon/agregar.gif")));
+		mnAgendas.add(mntmAgregarAgenda);
+		
+		mntmListarAgendas = new JMenuItem("Listar");
+		mntmListarAgendas.setIcon(new ImageIcon(Principal.class.getResource("/vista/img/icon/listar.jpg")));
+		mnAgendas.add(mntmListarAgendas);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(contentPane);
+		
+		tabbedPane = new JTabbedPane(JTabbedPane.TOP);
+		contentPane.add(tabbedPane, BorderLayout.CENTER);
+		
+		JPanel panelInicio = new JPanel();
+		tabbedPane.addTab("Inicio", new ImageIcon(Principal.class.getResource("/vista/img/icon/ic_inicio.gif")), panelInicio, "Inicio");
+		
+		panelAgregarServidor = new JPanel(new BorderLayout(0, 0));
+		//tabbedPane.addTab("Agregar Servidor", new ImageIcon(Principal.class.getResource("/vista/img/icon/addserver.png")), panelAgregarServidor, "Agregar un Servidor");
+		
+		panelListaServidores = new JPanel(new BorderLayout(0, 0));
+		//tabbedPane.addTab("Lista de Servidores", new ImageIcon(Principal.class.getResource("/vista/img/icon/lista_servidores.png")), panelListaServidores, "Listar los Servidores a conectar");
+		
+		panelAgregarArchivo = new JPanel();
+		tabbedPane.addTab("Agregar Archivo", new ImageIcon(Principal.class.getResource("/vista/img/icon/add_file.png")), panelAgregarArchivo, "Agregar un Archivo");
+		panelAgregarArchivo.setLayout(new BorderLayout(0, 0));
+		
+		panelSuperior = new JPanel();
+		panelAgregarArchivo.add(panelSuperior, BorderLayout.NORTH);
+		
+		lblMensaje = new JLabel("Por favor, llene los campos y presione Agregar");
+		panelSuperior.add(lblMensaje);
+		
+		panelCentral = new JPanel();
+		panelAgregarArchivo.add(panelCentral, BorderLayout.CENTER);
+		panelCentral.setLayout(new GridLayout(7, 2, 0, 0));
+		
+		panelLblIdArchivo = new JPanel();
+		FlowLayout flowLayout = (FlowLayout) panelLblIdArchivo.getLayout();
+		flowLayout.setAlignment(FlowLayout.TRAILING);
+		panelCentral.add(panelLblIdArchivo);
+		
+		lblIdArchivo = new JLabel("Id Archivo");
+		panelLblIdArchivo.add(lblIdArchivo);
+		
+		panelInferior = new JPanel();
+		panelAgregarArchivo.add(panelInferior, BorderLayout.SOUTH);
+		
+		panelListaArchivos = new JPanel();
+		//tabbedPane.addTab("Lista de Archivos", new ImageIcon(Principal.class.getResource("/vista/img/icon/file.png")), panelListaArchivos, "Lista de Archivos a Enviar");
+		
+		panelAgregarHilo = new JPanel();
+		//tabbedPane.addTab("Agregar Hilo", new ImageIcon(Principal.class.getResource("/vista/img/icon/process-add-icon.png")), panelAgregarHilo, "Agregar un Hilo");
+		
+		panelListaHilos = new JPanel();
+		//tabbedPane.addTab("Lista de Hilos", new ImageIcon(Principal.class.getResource("/vista/img/icon/listahilos.png")), panelListaHilos, "Lista de los Hilos a ejecutar");
+		
+		panelAgregarAgenda = new JPanel();
+		//tabbedPane.addTab("Agregar una Agenda", new ImageIcon(Principal.class.getResource("/vista/img/icon/calendar_add.png")), panelAgregarAgenda, "Agregar una Agenda para subir y bajar archivos");
+		
+		panelListaAgendas = new JPanel();
+		//tabbedPane.addTab("Lista de Agendas", new ImageIcon(Principal.class.getResource("/vista/img/icon/To-Do-List.icon.gif")), panelListaAgendas, "Lista de las Agendas programadas");
+	
+		//pack();
+		
+		ControladorPrincipal controlador = new ControladorPrincipal(this);
+		
+		mntmAgregarServidor.addActionListener(controlador);
+		mntmListarServidores.addActionListener(controlador);
+		
+		mntmAgregarArchivo.addActionListener(controlador);
+		mntmListarArchivos.addActionListener(controlador);
+		
+		mntmAgregarHilo.addActionListener(controlador);
+		mntmListarHilos.addActionListener(controlador);
+		
+		mntmAgregarAgenda.addActionListener(controlador);
+		mntmListarAgendas.addActionListener(controlador);
+
+	}
+
+	/**
+	 * @return the tabbedPane
+	 */
+	public JTabbedPane getTabbedPane() {
+		return tabbedPane;
+	}
+
+	/**
+	 * @return the panelAgregarServidor
+	 */
+	public JPanel getPanelAgregarServidor() {
+		return panelAgregarServidor;
+	}
+
+	/**
+	 * @return the panelListaServidores
+	 */
+	public JPanel getPanelListaServidores() {
+		return panelListaServidores;
+	}
+
+	/**
+	 * @return the mntmAgregarServidor
+	 */
+	public JMenuItem getMntmAgregarServidor() {
+		return mntmAgregarServidor;
+	}
+
+	/**
+	 * @return the mntmListarServidores
+	 */
+	public JMenuItem getMntmListarServidores() {
+		return mntmListarServidores;
+	}
+
+	/**
+	 * @return the mntmAgregarArchivo
+	 */
+	public JMenuItem getMntmAgregarArchivo() {
+		return mntmAgregarArchivo;
+	}
+
+	/**
+	 * @return the mntmListarArchivo
+	 */
+	public JMenuItem getMntmListarArchivos() {
+		return mntmListarArchivos;
+	}
+
+	/**
+	 * @return the mntmAgregarHilo
+	 */
+	public JMenuItem getMntmAgregarHilo() {
+		return mntmAgregarHilo;
+	}
+
+	/**
+	 * @return the mntmListarHilos
+	 */
+	public JMenuItem getMntmListarHilos() {
+		return mntmListarHilos;
+	}
+
+	/**
+	 * @return the mntmAgregarAgenda
+	 */
+	public JMenuItem getMntmAgregarAgenda() {
+		return mntmAgregarAgenda;
+	}
+
+	/**
+	 * @return the mntmListarAgendas
+	 */
+	public JMenuItem getMntmListarAgendas() {
+		return mntmListarAgendas;
+	}
+
+	/**
+	 * @return the panelAgregarArchivo
+	 */
+	public JPanel getPanelAgregarArchivo() {
+		return panelAgregarArchivo;
+	}
+
+	/**
+	 * @return the panelListaArchivo
+	 */
+	public JPanel getPanelListaArchivos() {
+		return panelListaArchivos;
+	}
+
+	/**
+	 * @return the panelAgregarHilo
+	 */
+	public JPanel getPanelAgregarHilo() {
+		return panelAgregarHilo;
+	}
+
+	/**
+	 * @return the panelListaHilos
+	 */
+	public JPanel getPanelListaHilos() {
+		return panelListaHilos;
+	}
+
+	/**
+	 * @return the panelAgregarAgenda
+	 */
+	public JPanel getPanelAgregarAgenda() {
+		return panelAgregarAgenda;
+	}
+
+	/**
+	 * @return the panelListaAgendas
+	 */
+	public JPanel getPanelListaAgendas() {
+		return panelListaAgendas;
+	}
+
+	
+	
+}

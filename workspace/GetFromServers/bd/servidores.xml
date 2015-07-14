@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+<ROW><id_servidor>s1</id_servidor><nombre>10.0.25.102</nombre><puerto>2222</puerto><protocolo>SSH</protocolo><usuario>adalberto</usuario><clave>linux.2816</clave><orden>1</orden></ROW><ROW><id_servidor>s2</id_servidor><nombre>10.0.25.102</nombre><puerto>2222</puerto><protocolo>SSH</protocolo><usuario>adalberto</usuario><clave>linux.2816</clave><orden>2</orden></ROW></DATA>

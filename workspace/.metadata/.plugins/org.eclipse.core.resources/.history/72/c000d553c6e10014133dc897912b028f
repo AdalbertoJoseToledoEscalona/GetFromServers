@@ -1,0 +1,148 @@
+/**
+ * 
+ */
+package vista;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.util.Properties;
+
+import com.ibm.as400.access.AS400;
+import com.ibm.as400.access.AS400SecurityException;
+import com.ibm.as400.access.IFSFile;
+import com.ibm.as400.access.IFSFileInputStream;
+import com.ibm.as400.access.IFSFileOutputStream;
+import com.ibm.as400.access.IFSFileReader;
+
+/**
+ * @author adalberto
+ *
+ */
+public class TestConnection {
+	static Properties props;
+	/**
+	 * 
+	 */
+	public TestConnection() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	/**
+	   Reads an integrated file system file.
+	   @param system The system that contains the file.
+	   @param path The absolute path name of the file.
+	   @return The characters read.
+	   @throws IOException
+	   @throws AS400SecurityException
+	   **/
+	   public byte[] readFile(AS400 system, String path) throws AS400SecurityException,
+	 IOException{
+	      IFSFile file = new IFSFile(system, path);
+	      /** creates a file input stream */
+	      IFSFileInputStream fis = new IFSFileInputStream (file,
+	      IFSFileInputStream.SHARE_READERS);
+	      byte[] data = new byte[fis.available()];
+	      fis.read(data);
+	      fis.close();
+	      return data;
+	 }
+	   
+	   
+	   /**
+	   Reads an integrated file system file.
+	   @param system The system that contains the file.
+	   @param path The absolute path name of the file.
+	   @return The characters read.
+	   @throws IOException
+	   @throws AS400SecurityException
+	 **/
+	   public String readFile2(AS400 system, String path) throws AS400SecurityException,
+	 IOException{
+	      IFSFile file = new IFSFile(system, path);
+	      /** creates a file reader */
+	      IFSFileReader fr = new IFSFileReader (file);
+	      BufferedReader br = new BufferedReader(fr);
+	      StringBuffer sb = new StringBuffer();
+	      /** Reads a line of text */
+	      String line = br.readLine();
+	      while (line != null){
+	           line = br.readLine();
+	           sb.append(line);
+	      }
+	      fr.close();
+	      return sb.toString();
+	 }
+	   
+	   
+	   /**
+	   Writes an integrated file system file.
+	   @param system The system that contains the file.
+	   @param path The absolute path name of the file.
+	   @param bytes The bytes to be written.
+	   @throws IOException
+	   @throws AS400SecurityException
+	 **/
+	   public void writeFile(AS400 system, String path, byte[] bytes) throws
+	 AS400SecurityException, IOException {
+	      IFSFile file = new IFSFile(system, path);
+	      /** creates a file output stream */
+	      IFSFileOutputStream fos = new IFSFileOutputStream (file);
+	      /** Writes bytes to file */
+	      fos.write(bytes);
+	      fos.close();
+	 }
+	   
+	   
+	   /**
+	   Writes an integrated file system file.
+	   @param system The system that contains the file.
+	   @param path The absolute path name of the file.
+	   @param str The characters to be written.
+	   @throws IOException
+	   @throws AS400SecurityException
+	 **/
+	   public void writeFile(AS400 system, String path, String str) throws IOException,
+	 AS400SecurityException {
+	      IFSFile file = new IFSFile(system, path);
+	      /** creates a file writer */
+	      IFSFileWriter fw = new IFSFileWriter (file);
+	      /** Writes a string to file */
+	      fw.write(str);
+	      fw.close();
+	 }
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		 
+		try {
+		 
+		 props = new Properties();
+		 props.load(new FileInputStream("properties/mydb2.properties"));
+		 
+		 /*System.out.println(props.getProperty("local_system").trim());
+		 System.out.println(props.getProperty("userId").trim());
+		 System.out.println(props.getProperty("password").trim());*/
+		 
+		 String DRIVER = "com.ibm.as400.access.AS400JDBCDriver"; 
+		 String URL = "jdbc:as400://" + props.getProperty("local_system").trim() + ";naming=system;errors=full";
+		 Connection conn = null;
+		 
+		 //Connect to iSeries 
+		 Class.forName(DRIVER); 
+		 conn = DriverManager.getConnection(URL, props.getProperty("userId").trim(), props.getProperty("password").trim()); 
+		 
+		 conn.close();
+		 
+		}
+		catch (Exception e) {
+		 System.out.println(e);
+		}
+	}
+
+}

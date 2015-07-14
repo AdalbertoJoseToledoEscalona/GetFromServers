@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/resolver.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/serializer.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/xercesSamples.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/xml-apis.jar"/>
+	<classpathentry kind="lib" path="forms-1.3.0.jar" sourcepath="forms-1.3.0-src.zip"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/jsch-0.1.52.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/util400.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/uitools.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/reportwriter.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/outputwriters.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/jui400.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/composer.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/tes.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/jt400android.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/jtopenlite.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/jt400Servlet.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/jt400Proxy.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/jt400.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/quartz-jobs-2.2.1.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/quartz-2.2.1.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/slf4j-api-1.6.6.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/slf4j-log4j12-1.6.6.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/c3p0-0.9.1.1.jar"/>
+	<classpathentry kind="lib" path="/home/adalberto/proyectos/GrupoTara/GetFromServers/libs/log4j-1.2.16.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
